@@ -1,0 +1,38 @@
+/* Import Outfit font */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* Tailwind CSS directives */
+* Global font setting */
+* {
+    font-family: 'Outfit', sans-serif; /* Correct font family reference */
+}
+
+/* Slider styles */
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%; /* Use width for slider to be responsive */
+    height: 8px; /* Set a specific height for the slider track */
+    background: transparent;
+    border-radius: 5px; /* Optional: add rounded corners for the slider */
+}
+
+/* Slider thumb styles */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* For webkit browsers */
+    appearance: none;
+    width: 30px;
+    height: 30px; /* Set height instead of min-height */
+    background-image: url('/assets/slide_icon.svg'); /* Ensure the path is correct */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%; /* Optional: make the thumb circular */
+}
+
+/* Background layer */
+.bg-layer {
+    background-image: url('/bg_layer.png'); /* Ensure the path is correct */
+    background-size: cover; /* Ensure it covers the whole container */
+    background-position: center;
+}
